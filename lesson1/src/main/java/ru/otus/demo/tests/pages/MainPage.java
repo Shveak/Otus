@@ -1,4 +1,4 @@
-package ru.otus.demo.logic.pages;
+package ru.otus.demo.tests.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

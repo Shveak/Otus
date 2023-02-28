@@ -4,8 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import ru.otus.demo.logic.factory.WebDriverFactory;
-import ru.otus.demo.logic.pages.MainPage;
+import ru.otus.demo.tests.factory.WebDriverFactory;
+import ru.otus.demo.tests.pages.MainPage;
 
 public class Test001 {
     private WebDriver driver;
@@ -26,14 +26,10 @@ public class Test001 {
     }
 
     @Test
-    public void test01() {
+    public void test01() throws InterruptedException {
         mainPage
                 .clickRandomLesson();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        Thread.sleep(5000);
     }
 
 }
